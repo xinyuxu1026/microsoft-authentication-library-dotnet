@@ -6,45 +6,10 @@
   <TypeSignature Language="F#" Value="type NullTelemetryClient = class&#xA;    interface ITelemetryClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-    <AssemblyVersion>6.27.0.0</AssemblyVersion>
-    <AssemblyVersion>6.28.1.0</AssemblyVersion>
-    <AssemblyVersion>6.29.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.1.0</AssemblyVersion>
-    <AssemblyVersion>6.31.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.1.0</AssemblyVersion>
-    <AssemblyVersion>6.32.2.0</AssemblyVersion>
-    <AssemblyVersion>6.32.3.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.2.0</AssemblyVersion>
-    <AssemblyVersion>7.0.3.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.3.1.0</AssemblyVersion>
-    <AssemblyVersion>7.4.0.0</AssemblyVersion>
-    <AssemblyVersion>7.4.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.0.0</AssemblyVersion>
-    <AssemblyVersion>7.5.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.0.0</AssemblyVersion>
-    <AssemblyVersion>7.6.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.3.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.2.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.1.2.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>8.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.3.0.0</AssemblyVersion>
-    <AssemblyVersion>8.3.1.0</AssemblyVersion>
-    <AssemblyVersion>8.4.0.0</AssemblyVersion>
-    <AssemblyVersion>8.5.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.1.0</AssemblyVersion>
-    <AssemblyVersion>8.7.0.0</AssemblyVersion>
-    <AssemblyVersion>8.8.0.0</AssemblyVersion>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -54,6 +19,12 @@
       <InterfaceName>Microsoft.IdentityModel.Abstractions.ITelemetryClient</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             The default implementation of the <see cref="T:Microsoft.IdentityModel.Abstractions.ITelemetryClient" /> interface which swallows all telemetry signals.
@@ -73,7 +44,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -97,7 +68,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -118,7 +89,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Abstractions.NullTelemetryClient</ReturnType>
@@ -143,7 +114,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -168,7 +139,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -196,7 +167,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -223,19 +194,61 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Abstractions</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="eventName" Type="System.String" />
-        <Parameter Name="stringProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="longProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Int64&gt;" />
-        <Parameter Name="boolProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Boolean&gt;" />
-        <Parameter Name="dateTimeProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;" />
-        <Parameter Name="doubleProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;" />
-        <Parameter Name="guidProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;" />
+        <Parameter Name="stringProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="longProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Int64&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="boolProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="dateTimeProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="doubleProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Double&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="guidProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Guid&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="eventName">To be added.</param>

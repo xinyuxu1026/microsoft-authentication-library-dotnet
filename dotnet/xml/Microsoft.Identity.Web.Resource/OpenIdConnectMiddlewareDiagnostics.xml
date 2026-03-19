@@ -6,51 +6,17 @@
   <TypeSignature Language="F#" Value="type OpenIdConnectMiddlewareDiagnostics = class&#xA;    interface IOpenIdConnectMiddlewareDiagnostics" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -60,6 +26,12 @@
       <InterfaceName>Microsoft.Identity.Web.Resource.IOpenIdConnectMiddlewareDiagnostics</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Diagnostics used in the OpenID Connect middleware
@@ -77,7 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.Resource.OpenIdConnectMiddlewareDiagnostics&gt;" />
@@ -103,7 +75,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

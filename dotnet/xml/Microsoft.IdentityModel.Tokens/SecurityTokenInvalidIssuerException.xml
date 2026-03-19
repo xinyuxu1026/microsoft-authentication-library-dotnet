@@ -6,45 +6,10 @@
   <TypeSignature Language="F#" Value="type SecurityTokenInvalidIssuerException = class&#xA;    inherit SecurityTokenValidationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-    <AssemblyVersion>6.27.0.0</AssemblyVersion>
-    <AssemblyVersion>6.28.1.0</AssemblyVersion>
-    <AssemblyVersion>6.29.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.1.0</AssemblyVersion>
-    <AssemblyVersion>6.31.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.1.0</AssemblyVersion>
-    <AssemblyVersion>6.32.2.0</AssemblyVersion>
-    <AssemblyVersion>6.32.3.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.2.0</AssemblyVersion>
-    <AssemblyVersion>7.0.3.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.3.1.0</AssemblyVersion>
-    <AssemblyVersion>7.4.0.0</AssemblyVersion>
-    <AssemblyVersion>7.4.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.0.0</AssemblyVersion>
-    <AssemblyVersion>7.5.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.0.0</AssemblyVersion>
-    <AssemblyVersion>7.6.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.3.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.2.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.1.2.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>8.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.3.0.0</AssemblyVersion>
-    <AssemblyVersion>8.3.1.0</AssemblyVersion>
-    <AssemblyVersion>8.4.0.0</AssemblyVersion>
-    <AssemblyVersion>8.5.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.1.0</AssemblyVersion>
-    <AssemblyVersion>8.7.0.0</AssemblyVersion>
-    <AssemblyVersion>8.8.0.0</AssemblyVersion>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.IdentityModel.Tokens.SecurityTokenValidationException</BaseTypeName>
@@ -71,7 +36,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -90,13 +55,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">Addtional information to be included in the exception and displayed to user.</param>
+        <param name="message">Additional information to be included in the exception and displayed to user.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException" /> class.
             </summary>
@@ -112,8 +77,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Formatter-based serialization is obsolete", DiagnosticId="SYSLIB0051")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Formatter-based serialization is obsolete", DiagnosticId="SYSLIB0051")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -136,15 +107,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message">Addtional information to be included in the exception and displayed to user.</param>
-        <param name="innerException">A <see cref="T:System.Exception" /> that represents the root cause of the exception.</param>
+        <param name="message">Additional information to be included in the exception and displayed to user.</param>
+        <param name="innerException">An <see cref="T:System.Exception" /> that represents the root cause of the exception.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException" /> class.
             </summary>
@@ -160,8 +131,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Formatter-based serialization is obsolete", DiagnosticId="SYSLIB0051")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Formatter-based serialization is obsolete", DiagnosticId="SYSLIB0051")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -186,7 +163,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

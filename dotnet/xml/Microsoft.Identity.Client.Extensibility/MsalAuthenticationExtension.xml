@@ -17,6 +17,18 @@
     <AssemblyVersion>4.70.0.0</AssemblyVersion>
     <AssemblyVersion>4.70.1.0</AssemblyVersion>
     <AssemblyVersion>4.70.2.0</AssemblyVersion>
+    <AssemblyVersion>4.71.0.0</AssemblyVersion>
+    <AssemblyVersion>4.71.1.0</AssemblyVersion>
+    <AssemblyVersion>4.74.0.0</AssemblyVersion>
+    <AssemblyVersion>4.74.1.0</AssemblyVersion>
+    <AssemblyVersion>4.76.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.1.0</AssemblyVersion>
+    <AssemblyVersion>4.78.0.0</AssemblyVersion>
+    <AssemblyVersion>4.79.1.0</AssemblyVersion>
+    <AssemblyVersion>4.79.2.0</AssemblyVersion>
+    <AssemblyVersion>4.81.0.0</AssemblyVersion>
+    <AssemblyVersion>4.82.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -38,7 +50,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,7 +67,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -77,14 +89,17 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Enables the developer to provide a custom authentication extension.
+            Inject an authentication operation. This is used for POP and composite tokens. 
+            IAuthencationOperation has a KeyID property that is used to bind tokens to a key. This affects how tokens are cached.
+            
+            Important: Use IAuthenticationOperation2 instead, for asynchronous token formatting.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -99,7 +114,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,System.Threading.Tasks.Task&gt;</ReturnType>

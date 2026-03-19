@@ -1,22 +1,22 @@
 ---
 title: Choosing a version of MSAL.NET
-description: Learn how to choose a version of MSAL.NET that suits your development scenario, based on the type of application and the underlying platform. 
-services: active-directory
-author: Dickson-Mwendia
+description: Learn how to choose a version of MSAL.NET that suits your development scenario, based on the type of application and the underlying platform.
+author: cilwerner
 manager: CelesteDG
-
+ms.author: cwerner
+ms.date: 03/17/2023
 ms.service: msal
 ms.subservice: msal-dotnet
+ms.reviewer: 
 ms.topic: reference
-ms.workload: identity
-ms.date: 03/17/2023
-ms.author: dmwendia
-ms.reviewer: localden
-ms.custom: devx-track-csharp, aaddev, engagement-fy23
+ms.custom: devx-track-csharp, aaddev, sfi-image-blocked
 # Customer intent: As an application developer, I want to know which version of MSAL.NET I'll use for my scenario based on the type of app I'm building and the platform I'm using. 
 ---
 
 # Choosing a version of MSAL.NET
+
+> [!IMPORTANT]
+> Effective May 1, 2025, Azure AD B2C is no longer available to purchase for new customers. [Learn more in our FAQ](/azure/active-directory-b2c/faq?tabs=app-reg-ga#azure-ad-b2c-end-of-sale).
 
 Depending on the type of application you're building, and its underlying platform, you can choose to use MSAL.NET, [Microsoft Identity Web](https://github.com/AzureAD/microsoft-identity-web), or both.
 

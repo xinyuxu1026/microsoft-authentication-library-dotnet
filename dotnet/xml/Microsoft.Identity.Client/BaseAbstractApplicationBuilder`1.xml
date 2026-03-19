@@ -40,6 +40,18 @@
     <AssemblyVersion>4.70.0.0</AssemblyVersion>
     <AssemblyVersion>4.70.1.0</AssemblyVersion>
     <AssemblyVersion>4.70.2.0</AssemblyVersion>
+    <AssemblyVersion>4.71.0.0</AssemblyVersion>
+    <AssemblyVersion>4.71.1.0</AssemblyVersion>
+    <AssemblyVersion>4.74.0.0</AssemblyVersion>
+    <AssemblyVersion>4.74.1.0</AssemblyVersion>
+    <AssemblyVersion>4.76.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.1.0</AssemblyVersion>
+    <AssemblyVersion>4.78.0.0</AssemblyVersion>
+    <AssemblyVersion>4.79.1.0</AssemblyVersion>
+    <AssemblyVersion>4.79.2.0</AssemblyVersion>
+    <AssemblyVersion>4.81.0.0</AssemblyVersion>
+    <AssemblyVersion>4.82.1.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -67,8 +79,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -93,8 +111,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -119,8 +143,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -160,7 +190,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -190,7 +220,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -223,7 +253,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -235,7 +265,8 @@
       <Docs>
         <param name="httpClientFactory">HTTP client factory</param>
         <param name="retryOnceOn5xx">Configures MSAL to retry on 5xx server errors. When enabled (on by default), MSAL will wait 1 second after receiving
-            a 5xx error and then retry the http request again.</param>
+            a 5xx error and then retry the http request again.
+            When disabled, the developer will be responsible for configuring their own retry policy in their custom IMsalHttpClientFactory.</param>
         <summary>
             Uses a specific <see cref="T:Microsoft.Identity.Client.IMsalHttpClientFactory" /> to communicate
             with the IdP. This enables advanced scenarios such as setting a proxy,
@@ -260,7 +291,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -294,7 +325,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -335,7 +366,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

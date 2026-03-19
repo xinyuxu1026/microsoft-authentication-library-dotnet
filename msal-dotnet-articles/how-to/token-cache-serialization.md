@@ -1,17 +1,15 @@
 ---
 title: Token cache serialization
 description: Learn about serialization and custom serialization of the token cache using the Microsoft Authentication Library for .NET (MSAL.NET).
-author: Dickson-Mwendia
+author: cilwerner
 manager: CelesteDG
-
+ms.author: cwerner
+ms.date: 05/20/2024
 ms.service: msal
 ms.subservice: msal-dotnet
-ms.topic: conceptual
-ms.workload: identity
-ms.date: 05/20/2024
-ms.author: dmwendia
-ms.reviewer: ddelimarsky, jmprieur
-ms.custom: devx-track-csharp, aaddev, has-adal-ref, devx-track-dotnet
+ms.reviewer: 
+ms.topic: concept-article
+ms.custom: devx-track-csharp, aaddev, devx-track-dotnet, sfi-ropc-nochange, sfi-image-nochange
 #Customer intent: As an application developer, I want to learn about token cache serialization so I can have fine-grained control of the proxy.
 ---
 
@@ -339,7 +337,7 @@ Add the [Microsoft.Identity.Client.Extensions.Msal](https://www.nuget.org/packag
 
 #### Configuring the token cache
 
-For details, see the [Cross platform Token Cache](https://github.com/AzureAD/microsoft-authentication-extensions-for-dotnet/wiki/Cross-platform-Token-Cache). Here's an example using the cross-platform token cache:
+The following example shows how to use a cross-platform token cache:
 
 ```csharp
  var storageProperties =
@@ -485,7 +483,7 @@ static class TokenCacheHelper
  }
 ```
 
-A product-quality, file-based token cache serializer for public client applications (for desktop applications running on Windows, Mac, and Linux) is available from the [Microsoft.Identity.Client.Extensions.Msal](https://github.com/AzureAD/microsoft-authentication-extensions-for-dotnet/tree/master/src/Microsoft.Identity.Client.Extensions.Msal) open-source library. You can include it in your applications from the following NuGet package: [Microsoft.Identity.Client.Extensions.Msal](https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/).
+A product-quality, file-based token cache serializer for public client applications (for desktop applications running on Windows, Mac, and Linux) is available from the [Microsoft.Identity.Client.Extensions.Msal](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/tree/main/src/client/Microsoft.Identity.Client.Extensions.Msal) open-source library. You can include it in your applications from the following NuGet package: [Microsoft.Identity.Client.Extensions.Msal](https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/).
 
 ---
 

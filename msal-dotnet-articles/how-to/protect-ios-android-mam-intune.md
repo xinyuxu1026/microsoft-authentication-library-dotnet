@@ -1,6 +1,16 @@
 ---
 title: Protecting iOS and Android applications with InTune
 description: "How to use InTune with Android and iOS applications that depend on MSAL.NET."
+author: cilwerner
+manager: 
+ms.author: cwerner
+ms.date: 05/22/2025
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: reference
+ms.custom: 
+#Customer intent: 
 ---
 
 # Protecting iOS and Android applications with InTune
@@ -43,7 +53,7 @@ App code that seeks access to protected scope "Hello.World"
 string clientId = "00001111-aaaa-2222-bbbb-3333cccc4444";
 string redirectURI = $"msauth.com.xamarin.microsoftintunemamsample://auth";
 string tenantID = "aaaabbbb-0000-cccc-1111-dddd2222eeee";
-string[] Scopes = { "api://a8bf4bd3-c92d-44d0-8307-9753d975c21e/Hello.World" }; // needs admin consent
+string[] Scopes = { "api://aaaabbbb-0000-cccc-1111-dddd2222eeee/Hello.World" }; // needs admin consent
 string[] clientCapabilities = { "ProtApp" }; // Important: This must be passed to the PCABuilder
 
 try

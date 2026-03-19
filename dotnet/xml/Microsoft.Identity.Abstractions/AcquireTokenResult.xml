@@ -6,30 +6,23 @@
   <TypeSignature Language="F#" Value="type AcquireTokenResult = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.1.0.0</AssemblyVersion>
-    <AssemblyVersion>5.3.0.0</AssemblyVersion>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.2.0.0</AssemblyVersion>
+    <AssemblyVersion>9.3.0.0</AssemblyVersion>
+    <AssemblyVersion>9.5.0.0</AssemblyVersion>
+    <AssemblyVersion>9.6.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Result of a token acquisition.
@@ -46,7 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="accessToken" Type="System.String" />
@@ -80,7 +73,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,6 +88,56 @@
         <altmember cref="T:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider" />
       </Docs>
     </Member>
+    <Member MemberName="AdditionalResponseParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;? AdditionalResponseParameters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, string&gt; AdditionalResponseParameters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Identity.Abstractions.AcquireTokenResult.AdditionalResponseParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalResponseParameters As IReadOnlyDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.AdditionalResponseParameters : System.Collections.Generic.IReadOnlyDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Identity.Abstractions.AcquireTokenResult.AdditionalResponseParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Exposes response parameters returned by the token issuer on the token endpoint, alongside the access token and its expiration time.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingCertificate">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2? BindingCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2 BindingCertificate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Identity.Abstractions.AcquireTokenResult.BindingCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindingCertificate As X509Certificate2" />
+      <MemberSignature Language="F#" Value="member this.BindingCertificate : System.Security.Cryptography.X509Certificates.X509Certificate2 with get, set" Usage="Microsoft.Identity.Abstractions.AcquireTokenResult.BindingCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The certificate bound to the access token, specific to mTLS POP tokens.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CorrelationId">
       <MemberSignature Language="C#" Value="public Guid CorrelationId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid CorrelationId" />
@@ -104,7 +147,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -127,7 +170,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTimeOffset</ReturnType>
@@ -151,7 +194,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -173,8 +216,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
       </ReturnValue>
@@ -196,7 +245,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -221,7 +270,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

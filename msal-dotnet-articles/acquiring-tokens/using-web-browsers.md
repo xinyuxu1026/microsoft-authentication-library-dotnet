@@ -1,17 +1,14 @@
 ---
 title: Using web browsers (MSAL.NET)
 description: Learn about using browsers in Microsoft Authentication Library for .NET (MSAL.NET).
-services: active-directory
-author: Dickson-Mwendia
+author: cilwerner
 manager: CelesteDG
-
+ms.author: cwerner
+ms.date: 08/24/2023
 ms.service: msal
 ms.subservice: msal-dotnet
-ms.topic: conceptual
-ms.workload: identity
-ms.date: 08/24/2023
-ms.author: dmwendia
-ms.reviewer: ddelimarsky
+ms.reviewer:
+ms.topic: how-to
 ms.custom: devx-track-csharp, aaddev, has-adal-ref, devx-track-dotnet
 #Customer intent: As an application developer, I want to learn about web browsers MSAL.NET so I can decide if this platform meets my application development needs and requirements.
 ---
@@ -99,7 +96,7 @@ For more details, see [Localhost exceptions](/azure/active-directory/develop/rep
 
 ### Linux and macOS
 
-On Linux, MSAL.NET opens the default system browser with a tool like [xdg-open](http://manpages.ubuntu.com/manpages/focal/man1/xdg-open.1.html). Opening the browser with `sudo` is unsupported by MSAL and will cause MSAL to throw an exception.
+On Linux, MSAL.NET opens the default system browser with a tool like [xdg-open](https://manpages.ubuntu.com/manpages/questing/en/man1/xdg-open.1.html). Opening the browser with `sudo` is unsupported by MSAL and will cause MSAL to throw an exception.
 
 On macOS, the browser is opened by invoking `open <url>`.
 

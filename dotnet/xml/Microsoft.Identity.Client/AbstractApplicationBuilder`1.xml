@@ -42,6 +42,18 @@
     <AssemblyVersion>4.70.0.0</AssemblyVersion>
     <AssemblyVersion>4.70.1.0</AssemblyVersion>
     <AssemblyVersion>4.70.2.0</AssemblyVersion>
+    <AssemblyVersion>4.71.0.0</AssemblyVersion>
+    <AssemblyVersion>4.71.1.0</AssemblyVersion>
+    <AssemblyVersion>4.74.0.0</AssemblyVersion>
+    <AssemblyVersion>4.74.1.0</AssemblyVersion>
+    <AssemblyVersion>4.76.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.1.0</AssemblyVersion>
+    <AssemblyVersion>4.78.0.0</AssemblyVersion>
+    <AssemblyVersion>4.79.1.0</AssemblyVersion>
+    <AssemblyVersion>4.79.2.0</AssemblyVersion>
+    <AssemblyVersion>4.81.0.0</AssemblyVersion>
+    <AssemblyVersion>4.82.1.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -72,7 +84,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -100,7 +112,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -131,7 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -167,7 +179,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -200,7 +212,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -234,7 +246,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -267,7 +279,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -302,7 +314,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -336,7 +348,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -375,7 +387,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -403,7 +415,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -441,7 +453,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -472,7 +484,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -499,8 +511,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is deprecated. Please use the WithExtraQueryParameters(IDictionary&lt;string, (string value, bool includeInCacheKey)&gt;) method instead, which provides control over which parameters are included in the cache key.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is deprecated. Please use the WithExtraQueryParameters(IDictionary&lt;string, (string value, bool includeInCacheKey)&gt;) method instead, which provides control over which parameters are included in the cache key.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -519,6 +537,44 @@
       </Docs>
     </Member>
     <Member MemberName="WithExtraQueryParameters">
+      <MemberSignature Language="C#" Value="public T WithExtraQueryParameters (System.Collections.Generic.IDictionary&lt;string,(string Value, bool IncludeInCacheKey)&gt; extraQueryParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T WithExtraQueryParameters(class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.ValueTuple`2&lt;string, bool&gt;&gt; extraQueryParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithExtraQueryParameters(System.Collections.Generic.IDictionary{System.String,System.ValueTuple{System.String,System.Boolean}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithExtraQueryParameters (extraQueryParameters As IDictionary(Of String, ValueTuple(Of String, Boolean))) As T" />
+      <MemberSignature Language="F#" Value="member this.WithExtraQueryParameters : System.Collections.Generic.IDictionary&lt;string, ValueTuple&lt;string, bool&gt;&gt; -&gt; 'T" Usage="abstractApplicationBuilder.WithExtraQueryParameters extraQueryParameters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Client</AssemblyName>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extraQueryParameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ValueTuple&lt;System.String,System.Boolean&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "IncludeInCacheKey" })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "Value", "IncludeInCacheKey" })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="extraQueryParameters">This parameter will be appended as is to the query string in the HTTP authentication request to the authority, and merged with those added to the request-level WithExtraQueryParameters API.
+            Each dictionary entry maps a parameter name to a tuple containing:
+            - Value: The parameter value that will be appended to the query string
+            - IncludeInCacheKey: Whether this parameter should be included when computing the token's cache key.
+            To help ensure the correct token is returned from the cache, IncludeInCacheKey should be true if the parameter affects token content or validity (e.g., resource-specific claims or parameters).
+            The parameter can be null.</param>
+        <summary>
+            Sets Extra Query Parameters for the query string in the HTTP authentication request with control over which parameters are included in the cache key
+            </summary>
+        <returns>The builder to chain .With methods.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithExtraQueryParameters">
       <MemberSignature Language="C#" Value="public T WithExtraQueryParameters (string extraQueryParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T WithExtraQueryParameters(string extraQueryParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithExtraQueryParameters(System.String)" />
@@ -527,8 +583,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This method is deprecated. Please use the WithExtraQueryParameters(IDictionary&lt;string, (string value, bool includeInCacheKey)&gt;) method instead, which provides control over which parameters are included in the cache key.", false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is deprecated. Please use the WithExtraQueryParameters(IDictionary&lt;string, (string value, bool includeInCacheKey)&gt;) method instead, which provides control over which parameters are included in the cache key.", false)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>T</ReturnType>
       </ReturnValue>
@@ -555,7 +617,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -596,7 +658,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -637,7 +699,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -667,7 +729,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -698,7 +760,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -729,7 +791,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -761,7 +823,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -788,7 +850,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -818,7 +880,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -854,7 +916,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

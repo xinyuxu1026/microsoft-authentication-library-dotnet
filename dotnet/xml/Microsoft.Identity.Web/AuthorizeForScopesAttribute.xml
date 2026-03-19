@@ -6,56 +6,28 @@
   <TypeSignature Language="F#" Value="type AuthorizeForScopesAttribute = class&#xA;    inherit ExceptionFilterAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Mvc.Filters.ExceptionFilterAttribute</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Filter used on a controller action to trigger incremental consent.
@@ -79,7 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -96,7 +68,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,7 +90,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -127,7 +99,7 @@
         <Parameter Name="context" Type="Microsoft.AspNetCore.Mvc.Filters.ExceptionContext" />
       </Parameters>
       <Docs>
-        <param name="context">Context provided by ASP.NET Core.</param>
+        <param name="context">context provided by ASP.NET Core.</param>
         <summary>
             Handles the <see cref="T:Microsoft.Identity.Client.MsalUiRequiredException" />.
             </summary>
@@ -143,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -165,8 +137,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
@@ -187,7 +165,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

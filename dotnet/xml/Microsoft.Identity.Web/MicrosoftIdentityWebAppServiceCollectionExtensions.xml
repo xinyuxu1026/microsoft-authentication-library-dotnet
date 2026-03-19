@@ -6,51 +6,17 @@
   <TypeSignature Language="F#" Value="type MicrosoftIdentityWebAppServiceCollectionExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -72,9 +38,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Microsoft.Identity.Web.MicrosoftIdentityWebAppAuthenticationBuilderExtensions.AddMicrosoftIdentityWebApp(AuthenticationBuilder, IConfiguration, String, String, String, Boolean, String).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresDynamicCode("Microsoft.Identity.Web.MicrosoftIdentityWebAppAuthenticationBuilderExtensions.AddMicrosoftIdentityWebApp(AuthenticationBuilder, IConfiguration, String, String, String, Boolean, String).")&gt;]</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Microsoft.Identity.Web.MicrosoftIdentityWebAppAuthenticationBuilderExtensions.AddMicrosoftIdentityWebApp(AuthenticationBuilder, IConfiguration, String, String, String, Boolean, String).")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("Microsoft.Identity.Web.MicrosoftIdentityWebAppAuthenticationBuilderExtensions.AddMicrosoftIdentityWebApp(AuthenticationBuilder, IConfiguration, String, String, String, Boolean, String).")&gt;]</AttributeName>
@@ -90,7 +60,14 @@
         <Parameter Name="openIdConnectScheme" Type="System.String" />
         <Parameter Name="cookieScheme" Type="System.String" />
         <Parameter Name="subscribeToOpenIdConnectMiddlewareDiagnosticsEvents" Type="System.Boolean" />
-        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="services">Service collection to which to add authentication.</param>

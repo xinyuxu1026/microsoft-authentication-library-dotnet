@@ -3,14 +3,12 @@ title: Microsoft Identity Web
 description: Learn how you can use Microsoft Identity Web to add authentication and authorization to web apps, web APIs, and daemon applications. 
 author: Dickson-Mwendia
 manager: CelesteDG
-
+ms.author: jmprieur
+ms.date: 06/04/2024
 ms.service: msal
 ms.subservice: microsoft-identity-web
-ms.topic: conceptual
-ms.workload: identity
-ms.date: 06/04/2024
-ms.author: jmprieur
-ms.reviewer: localden, jmprieur
+ms.reviewer:
+ms.topic: concept-article
 ms.custom: devx-track-csharp, aaddev
 # Customer intent: As an application developer, I want to learn how Microsoft Identity Web can help me protect my services with the Microsoft identity platform. 
 ---
@@ -21,7 +19,7 @@ Microsoft Identity Web is a set of ASP.NET Core libraries that simplifies adding
 
 ## Supported application scenarios
 
-When building ASP.NET Core web apps or web APIs that use Microsoft Entra ID or Azure AD B2C for identity and access management (IAM), Microsoft Identity Web is recommended for these scenarios:
+When building ASP.NET Core web apps or web APIs that use Microsoft Entra ID or Microsoft Entra External ID for identity and access management (IAM), Microsoft Identity Web is recommended for these scenarios:
 
 - [Service/daemon applications](/azure/active-directory/develop/scenario-daemon-overview)
 - [Web app that signs in users](/azure/active-directory/develop/scenario-web-app-sign-user-overview)

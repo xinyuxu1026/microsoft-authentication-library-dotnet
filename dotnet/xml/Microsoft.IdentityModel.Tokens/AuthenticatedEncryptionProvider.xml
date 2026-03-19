@@ -6,45 +6,10 @@
   <TypeSignature Language="F#" Value="type AuthenticatedEncryptionProvider = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-    <AssemblyVersion>6.27.0.0</AssemblyVersion>
-    <AssemblyVersion>6.28.1.0</AssemblyVersion>
-    <AssemblyVersion>6.29.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.1.0</AssemblyVersion>
-    <AssemblyVersion>6.31.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.1.0</AssemblyVersion>
-    <AssemblyVersion>6.32.2.0</AssemblyVersion>
-    <AssemblyVersion>6.32.3.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.2.0</AssemblyVersion>
-    <AssemblyVersion>7.0.3.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.3.1.0</AssemblyVersion>
-    <AssemblyVersion>7.4.0.0</AssemblyVersion>
-    <AssemblyVersion>7.4.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.0.0</AssemblyVersion>
-    <AssemblyVersion>7.5.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.0.0</AssemblyVersion>
-    <AssemblyVersion>7.6.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.3.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.2.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.1.2.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>8.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.3.0.0</AssemblyVersion>
-    <AssemblyVersion>8.3.1.0</AssemblyVersion>
-    <AssemblyVersion>8.4.0.0</AssemblyVersion>
-    <AssemblyVersion>8.5.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.1.0</AssemblyVersion>
-    <AssemblyVersion>8.7.0.0</AssemblyVersion>
-    <AssemblyVersion>8.8.0.0</AssemblyVersion>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -70,7 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="key" Type="Microsoft.IdentityModel.Tokens.SecurityKey" />
@@ -97,7 +62,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -119,7 +84,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -141,7 +106,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -179,7 +144,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -200,7 +165,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -225,7 +190,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.AuthenticatedEncryptionResult</ReturnType>
@@ -256,7 +221,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.AuthenticatedEncryptionResult</ReturnType>
@@ -289,7 +254,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -320,7 +285,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -349,7 +314,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.SecurityKey</ReturnType>
@@ -371,7 +336,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

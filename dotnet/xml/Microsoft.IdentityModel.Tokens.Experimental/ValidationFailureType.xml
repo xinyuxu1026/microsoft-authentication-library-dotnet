@@ -1,0 +1,285 @@
+<Type Name="ValidationFailureType" FullName="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType">
+  <TypeSignature Language="C#" Value="public abstract class ValidationFailureType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValidationFailureType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValidationFailureType" />
+  <TypeSignature Language="F#" Value="type ValidationFailureType = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Failures that occur during validation of a <see cref="T:Microsoft.IdentityModel.Tokens.SecurityToken" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ValidationFailureType (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType : string -&gt; Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="new Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType name" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>
+            Creates an instance of <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CryptoProviderReturnedNull">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType CryptoProviderReturnedNull;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType CryptoProviderReturnedNull" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.CryptoProviderReturnedNull" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CryptoProviderReturnedNull As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable CryptoProviderReturnedNull : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.CryptoProviderReturnedNull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            CryptoProvider CreateForVerifying returned null.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyWrapFailed">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType KeyWrapFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType KeyWrapFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.KeyWrapFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyWrapFailed As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyWrapFailed : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.KeyWrapFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            KeyWrap failed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullArgument">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType NullArgument;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType NullArgument" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.NullArgument" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NullArgument As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable NullArgument : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.NullArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A required parameter was null.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenNotExpectedType">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SecurityTokenNotExpectedType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SecurityTokenNotExpectedType" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SecurityTokenNotExpectedType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SecurityTokenNotExpectedType As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable SecurityTokenNotExpectedType : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SecurityTokenNotExpectedType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token is not the correct type.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenTooLarge">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SecurityTokenTooLarge;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SecurityTokenTooLarge" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SecurityTokenTooLarge" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SecurityTokenTooLarge As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable SecurityTokenTooLarge : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SecurityTokenTooLarge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token is too large.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignedInfoNull">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SignedInfoNull;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType SignedInfoNull" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SignedInfoNull" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SignedInfoNull As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable SignedInfoNull : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.SignedInfoNull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Signed info is null.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenDecompressionFailed">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenDecompressionFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenDecompressionFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenDecompressionFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenDecompressionFailed As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenDecompressionFailed : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenDecompressionFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token could not be decompressed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenDecryptionFailed">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenDecryptionFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenDecryptionFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenDecryptionFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenDecryptionFailed As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenDecryptionFailed : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenDecryptionFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token could not be decrypted.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenExceedsMaximumSize">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenExceedsMaximumSize;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenExceedsMaximumSize" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenExceedsMaximumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenExceedsMaximumSize As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenExceedsMaximumSize : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenExceedsMaximumSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token exceeds the maximum size.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenReadingFailed">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenReadingFailed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType TokenReadingFailed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenReadingFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenReadingFailed As ValidationFailureType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenReadingFailed : Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" Usage="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType.TokenReadingFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A token could not be read.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -6,45 +6,10 @@
   <TypeSignature Language="F#" Value="type JwtHeader = class&#xA;    inherit Dictionary&lt;string, obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-    <AssemblyVersion>6.27.0.0</AssemblyVersion>
-    <AssemblyVersion>6.28.1.0</AssemblyVersion>
-    <AssemblyVersion>6.29.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.0.0</AssemblyVersion>
-    <AssemblyVersion>6.30.1.0</AssemblyVersion>
-    <AssemblyVersion>6.31.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.0.0</AssemblyVersion>
-    <AssemblyVersion>6.32.1.0</AssemblyVersion>
-    <AssemblyVersion>6.32.2.0</AssemblyVersion>
-    <AssemblyVersion>6.32.3.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.2.0</AssemblyVersion>
-    <AssemblyVersion>7.0.3.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.3.1.0</AssemblyVersion>
-    <AssemblyVersion>7.4.0.0</AssemblyVersion>
-    <AssemblyVersion>7.4.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.0.0</AssemblyVersion>
-    <AssemblyVersion>7.5.1.0</AssemblyVersion>
-    <AssemblyVersion>7.5.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.0.0</AssemblyVersion>
-    <AssemblyVersion>7.6.2.0</AssemblyVersion>
-    <AssemblyVersion>7.6.3.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.2.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.1.2.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>8.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.3.0.0</AssemblyVersion>
-    <AssemblyVersion>8.3.1.0</AssemblyVersion>
-    <AssemblyVersion>8.4.0.0</AssemblyVersion>
-    <AssemblyVersion>8.5.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.0.0</AssemblyVersion>
-    <AssemblyVersion>8.6.1.0</AssemblyVersion>
-    <AssemblyVersion>8.7.0.0</AssemblyVersion>
-    <AssemblyVersion>8.8.0.0</AssemblyVersion>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</BaseTypeName>
@@ -70,7 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -89,7 +54,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encryptingCredentials" Type="Microsoft.IdentityModel.Tokens.EncryptingCredentials" />
@@ -114,7 +79,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signingCredentials" Type="Microsoft.IdentityModel.Tokens.SigningCredentials" />
@@ -138,7 +103,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encryptingCredentials" Type="Microsoft.IdentityModel.Tokens.EncryptingCredentials" />
@@ -165,7 +130,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signingCredentials" Type="Microsoft.IdentityModel.Tokens.SigningCredentials" />
@@ -191,7 +156,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encryptingCredentials" Type="Microsoft.IdentityModel.Tokens.EncryptingCredentials" />
@@ -220,7 +185,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signingCredentials" Type="Microsoft.IdentityModel.Tokens.SigningCredentials" />
@@ -248,7 +213,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="encryptingCredentials" Type="Microsoft.IdentityModel.Tokens.EncryptingCredentials" />
@@ -279,7 +244,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="signingCredentials" Type="Microsoft.IdentityModel.Tokens.SigningCredentials" />
@@ -309,7 +274,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -331,7 +296,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Tokens.Jwt.JwtHeader</ReturnType>
@@ -345,7 +310,7 @@
             Deserializes Base64UrlEncoded JSON into a <see cref="T:System.IdentityModel.Tokens.Jwt.JwtHeader" /> instance.
             </summary>
         <returns>An instance of <see cref="T:System.IdentityModel.Tokens.Jwt.JwtHeader" />.</returns>
-        <remarks>Use <see cref="P:System.IdentityModel.Tokens.Jwt.JsonExtensions.Deserializer" /> to customize JSON serialization.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Base64UrlEncode">
@@ -357,7 +322,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -368,7 +333,7 @@
             Encodes this instance as Base64UrlEncoded JSON.
             </summary>
         <returns>Base64UrlEncoded JSON.</returns>
-        <remarks>Use <see cref="P:System.IdentityModel.Tokens.Jwt.JsonExtensions.Serializer" /> to customize JSON serialization.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cty">
@@ -380,7 +345,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -402,7 +367,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -424,7 +389,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
@@ -446,7 +411,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -468,7 +433,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -490,7 +455,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -501,7 +466,7 @@
             Serializes this instance to JSON.
             </summary>
         <returns>This instance as JSON.</returns>
-        <remarks>Use <see cref="P:System.IdentityModel.Tokens.Jwt.JsonExtensions.Serializer" /> to customize JSON serialization.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SigningCredentials">
@@ -513,7 +478,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.IdentityModel.Tokens.SigningCredentials</ReturnType>
@@ -535,7 +500,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -557,7 +522,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -579,7 +544,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -601,7 +566,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Tokens.Jwt</AssemblyName>
-        <AssemblyVersion>8.8.0.0</AssemblyVersion>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

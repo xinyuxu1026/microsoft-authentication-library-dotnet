@@ -42,6 +42,18 @@
     <AssemblyVersion>4.70.0.0</AssemblyVersion>
     <AssemblyVersion>4.70.1.0</AssemblyVersion>
     <AssemblyVersion>4.70.2.0</AssemblyVersion>
+    <AssemblyVersion>4.71.0.0</AssemblyVersion>
+    <AssemblyVersion>4.71.1.0</AssemblyVersion>
+    <AssemblyVersion>4.74.0.0</AssemblyVersion>
+    <AssemblyVersion>4.74.1.0</AssemblyVersion>
+    <AssemblyVersion>4.76.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.1.0</AssemblyVersion>
+    <AssemblyVersion>4.78.0.0</AssemblyVersion>
+    <AssemblyVersion>4.79.1.0</AssemblyVersion>
+    <AssemblyVersion>4.79.2.0</AssemblyVersion>
+    <AssemblyVersion>4.81.0.0</AssemblyVersion>
+    <AssemblyVersion>4.82.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -62,11 +74,35 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Default constructor for AssertionRequestOptions
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authority">
+      <MemberSignature Language="C#" Value="public string Authority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Authority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Identity.Client.AssertionRequestOptions.Authority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authority As String" />
+      <MemberSignature Language="F#" Value="member this.Authority : string with get, set" Usage="Microsoft.Identity.Client.AssertionRequestOptions.Authority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Client</AssemblyName>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The authority URL (e.g., https://login.microsoftonline.com/{tenantId})
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,13 +115,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Cancellation token to cancel the operation
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -99,7 +137,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -107,6 +145,28 @@
       <Docs>
         <summary>
             Claims to be included in the client assertion
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientAssertionFmiPath">
+      <MemberSignature Language="C#" Value="public string ClientAssertionFmiPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientAssertionFmiPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Identity.Client.AssertionRequestOptions.ClientAssertionFmiPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientAssertionFmiPath As String" />
+      <MemberSignature Language="F#" Value="member this.ClientAssertionFmiPath : string with get, set" Usage="Microsoft.Identity.Client.AssertionRequestOptions.ClientAssertionFmiPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Client</AssemblyName>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            FMI path to be used for client assertion. Tokens are associated with this path in the cache.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -121,7 +181,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -145,7 +205,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -153,6 +213,28 @@
       <Docs>
         <summary>
             Client ID for which a signed assertion is requested
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TenantId">
+      <MemberSignature Language="C#" Value="public string TenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TenantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Identity.Client.AssertionRequestOptions.TenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property TenantId As String" />
+      <MemberSignature Language="F#" Value="member this.TenantId : string with get, set" Usage="Microsoft.Identity.Client.AssertionRequestOptions.TenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Client</AssemblyName>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Tenant ID for the authentication request
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -167,7 +249,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

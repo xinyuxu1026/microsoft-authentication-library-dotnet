@@ -39,6 +39,18 @@
     <AssemblyVersion>4.70.0.0</AssemblyVersion>
     <AssemblyVersion>4.70.1.0</AssemblyVersion>
     <AssemblyVersion>4.70.2.0</AssemblyVersion>
+    <AssemblyVersion>4.71.0.0</AssemblyVersion>
+    <AssemblyVersion>4.71.1.0</AssemblyVersion>
+    <AssemblyVersion>4.74.0.0</AssemblyVersion>
+    <AssemblyVersion>4.74.1.0</AssemblyVersion>
+    <AssemblyVersion>4.76.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.0.0</AssemblyVersion>
+    <AssemblyVersion>4.77.1.0</AssemblyVersion>
+    <AssemblyVersion>4.78.0.0</AssemblyVersion>
+    <AssemblyVersion>4.79.1.0</AssemblyVersion>
+    <AssemblyVersion>4.79.2.0</AssemblyVersion>
+    <AssemblyVersion>4.81.0.0</AssemblyVersion>
+    <AssemblyVersion>4.82.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -65,7 +77,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Client.BrokerOptions+OperatingSystems</ReturnType>
@@ -86,7 +98,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Client.BrokerOptions+OperatingSystems</ReturnType>
@@ -95,6 +107,27 @@
       <Docs>
         <summary>
             No OS specified - Invalid options
+            </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OSX">
+      <MemberSignature Language="C#" Value="OSX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Identity.Client.BrokerOptions/OperatingSystems OSX = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Identity.Client.BrokerOptions.OperatingSystems.OSX" />
+      <MemberSignature Language="VB.NET" Value="OSX" />
+      <MemberSignature Language="F#" Value="OSX = 4" Usage="Microsoft.Identity.Client.BrokerOptions.OperatingSystems.OSX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Client</AssemblyName>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Identity.Client.BrokerOptions+OperatingSystems</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+            Use broker on OSX
             </summary>
       </Docs>
     </Member>
@@ -107,7 +140,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Client</AssemblyName>
-        <AssemblyVersion>4.70.2.0</AssemblyVersion>
+        <AssemblyVersion>4.82.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Client.BrokerOptions+OperatingSystems</ReturnType>

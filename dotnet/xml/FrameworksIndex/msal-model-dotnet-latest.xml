@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="msal-model-dotnet-latest">
   <Assemblies>
-    <Assembly Name="Microsoft.Identity.Abstractions" Version="9.0.0.0" />
-    <Assembly Name="Microsoft.Identity.Web.Azure" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.Certificate" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.Certificateless" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web" Version="3.8.3.0" />
+    <Assembly Name="Microsoft.Identity.Abstractions" Version="11.1.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.Azure" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.Certificate" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.Certificateless" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.DownstreamApi" Version="4.5.0.0" />
     <Assembly Name="Microsoft.Identity.Web.DownstreamRestApi" Version="2.0.8.0" />
-    <Assembly Name="Microsoft.Identity.Web.MicrosoftGraph" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.MicrosoftGraphBeta" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.OWIN" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.TokenAcquisition" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.TokenCache" Version="3.8.3.0" />
-    <Assembly Name="Microsoft.Identity.Web.UI" Version="3.8.3.0" />
+    <Assembly Name="Microsoft.Identity.Web.MicrosoftGraph" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.MicrosoftGraphBeta" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.OWIN" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.TokenAcquisition" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.TokenCache" Version="4.5.0.0" />
+    <Assembly Name="Microsoft.Identity.Web.UI" Version="4.5.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Identity.Abstractions">
     <Type Name="Microsoft.Identity.Abstractions.AcquireTokenOptions" Id="T:Microsoft.Identity.Abstractions.AcquireTokenOptions">
@@ -38,12 +39,27 @@
     <Type Name="Microsoft.Identity.Abstractions.AcquireTokenResult" Id="T:Microsoft.Identity.Abstractions.AcquireTokenResult">
       <Member Id="M:Microsoft.Identity.Abstractions.AcquireTokenResult.#ctor(System.String,System.DateTimeOffset,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Guid,System.String)" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.AccessToken" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.AdditionalResponseParameters" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.BindingCertificate" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.CorrelationId" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.ExpiresOn" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.IdToken" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.Scopes" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.TenantId" />
       <Member Id="P:Microsoft.Identity.Abstractions.AcquireTokenResult.TokenType" />
+    </Type>
+    <Type Name="Microsoft.Identity.Abstractions.AuthorizationHeaderError" Id="T:Microsoft.Identity.Abstractions.AuthorizationHeaderError">
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderError.#ctor" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderError.#ctor(System.String,System.String)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderError.#ctor(System.String,System.String,System.Exception)" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderError.Code" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderError.Exception" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderError.Message" />
+    </Type>
+    <Type Name="Microsoft.Identity.Abstractions.AuthorizationHeaderInformation" Id="T:Microsoft.Identity.Abstractions.AuthorizationHeaderInformation">
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderInformation.#ctor" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderInformation.AuthorizationHeaderValue" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderInformation.BindingCertificate" />
     </Type>
     <Type Name="Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions" Id="T:Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions">
       <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions.#ctor" />
@@ -59,9 +75,21 @@
       <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions.RelativePath" />
       <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions.RequestAppToken" />
     </Type>
+    <Type Name="Microsoft.Identity.Abstractions.AuthorizationHeaderResult" Id="T:Microsoft.Identity.Abstractions.AuthorizationHeaderResult">
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.#ctor(Microsoft.Identity.Abstractions.AuthorizationHeaderError)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.#ctor(Microsoft.Identity.Abstractions.AuthorizationHeaderInformation)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.#ctor(Microsoft.Identity.Abstractions.AuthorizationHeaderInformation,Microsoft.Identity.Abstractions.AuthorizationHeaderError)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.op_Implicit(Microsoft.Identity.Abstractions.AuthorizationHeaderError)~Microsoft.Identity.Abstractions.AuthorizationHeaderResult" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.op_Implicit(Microsoft.Identity.Abstractions.AuthorizationHeaderInformation)~Microsoft.Identity.Abstractions.AuthorizationHeaderResult" />
+      <Member Id="M:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.op_Implicit(Microsoft.Identity.Abstractions.AuthorizationHeaderResult)~System.String" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.Error" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.Result" />
+      <Member Id="P:Microsoft.Identity.Abstractions.AuthorizationHeaderResult.Succeeded" />
+    </Type>
     <Type Name="Microsoft.Identity.Abstractions.CredentialDescription" Id="T:Microsoft.Identity.Abstractions.CredentialDescription">
       <Member Id="M:Microsoft.Identity.Abstractions.CredentialDescription.#ctor" />
       <Member Id="M:Microsoft.Identity.Abstractions.CredentialDescription.#ctor(Microsoft.Identity.Abstractions.CredentialDescription)" />
+      <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.Algorithm" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.Base64EncodedValue" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CachedValue" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.Certificate" />
@@ -69,6 +97,7 @@
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CertificateDistinguishedName" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CertificatePassword" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CertificateStorePath" />
+      <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CertificateSubjectName" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CertificateThumbprint" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.ClientSecret" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.CredentialType" />
@@ -85,6 +114,11 @@
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.TokenExchangeAuthority" />
       <Member Id="P:Microsoft.Identity.Abstractions.CredentialDescription.TokenExchangeUrl" />
     </Type>
+    <Type Name="Microsoft.Identity.Abstractions.CredentialDescriptionJsonConverter" Id="T:Microsoft.Identity.Abstractions.CredentialDescriptionJsonConverter">
+      <Member Id="M:Microsoft.Identity.Abstractions.CredentialDescriptionJsonConverter.#ctor" />
+      <Member Id="M:Microsoft.Identity.Abstractions.CredentialDescriptionJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.CredentialDescriptionJsonConverter.Write(System.Text.Json.Utf8JsonWriter,Microsoft.Identity.Abstractions.CredentialDescription,System.Text.Json.JsonSerializerOptions)" />
+    </Type>
     <Type Name="Microsoft.Identity.Abstractions.CredentialSource" Id="T:Microsoft.Identity.Abstractions.CredentialSource">
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.AutoDecryptKeys" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.Base64Encoded" />
@@ -92,11 +126,13 @@
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.ClientSecret" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.CustomSignedAssertion" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.KeyVault" />
+      <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.ManagedCertificate" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.Path" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.SignedAssertionFilePath" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.SignedAssertionFromManagedIdentity" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.SignedAssertionFromVault" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.StoreWithDistinguishedName" />
+      <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.StoreWithSubjectName" />
       <Member Id="F:Microsoft.Identity.Abstractions.CredentialSource.StoreWithThumbprint" />
     </Type>
     <Type Name="Microsoft.Identity.Abstractions.CredentialSourceLoaderParameters" Id="T:Microsoft.Identity.Abstractions.CredentialSourceLoaderParameters">
@@ -118,6 +154,8 @@
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.AcceptHeader" />
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.ContentType" />
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.Deserializer" />
+      <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.ExtraHeaderParameters" />
+      <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.ExtraQueryParameters" />
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.Scopes" />
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptions.Serializer" />
     </Type>
@@ -127,10 +165,19 @@
       <Member Id="M:Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod.CloneInternal" />
       <Member Id="P:Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod.HttpMethod" />
     </Type>
+    <Type Name="Microsoft.Identity.Abstractions.IAuthenticationSchemeInformationProvider" Id="T:Microsoft.Identity.Abstractions.IAuthenticationSchemeInformationProvider">
+      <Member Id="M:Microsoft.Identity.Abstractions.IAuthenticationSchemeInformationProvider.GetEffectiveAuthenticationScheme(System.String)" />
+    </Type>
     <Type Name="Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider" Id="T:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider">
       <Member Id="M:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider.CreateAuthorizationHeaderAsync(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions,System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider.CreateAuthorizationHeaderForAppAsync(System.String,Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider.CreateAuthorizationHeaderForUserAsync(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Abstractions.AuthorizationHeaderProviderOptions,System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider`1" Id="T:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider`1">
+      <Member Id="M:Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider`1.CreateAuthorizationHeaderAsync(Microsoft.Identity.Abstractions.DownstreamApiOptions,System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Identity.Abstractions.IBoundAuthorizationHeaderProvider" Id="T:Microsoft.Identity.Abstractions.IBoundAuthorizationHeaderProvider">
+      <Member Id="M:Microsoft.Identity.Abstractions.IBoundAuthorizationHeaderProvider.CreateBoundAuthorizationHeaderAsync(Microsoft.Identity.Abstractions.DownstreamApiOptions,System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Identity.Abstractions.ICredentialsLoader" Id="T:Microsoft.Identity.Abstractions.ICredentialsLoader">
       <Member Id="M:Microsoft.Identity.Abstractions.ICredentialsLoader.LoadCredentialsIfNeededAsync(Microsoft.Identity.Abstractions.CredentialDescription,Microsoft.Identity.Abstractions.CredentialSourceLoaderParameters)" />
@@ -162,30 +209,54 @@
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiAsync(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForAppAsync(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForAppAsync``1(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForAppAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForUserAsync(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForUserAsync``1(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForUserAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.CallApiForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForAppAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForAppAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForUserAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForUserAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.DeleteForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForAppAsync``1(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForAppAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForUserAsync``1(System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForUserAsync``1(System.String,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.GetForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForAppAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForAppAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForUserAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForUserAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PatchForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForAppAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForAppAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForUserAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForUserAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PostForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForAppAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForAppAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForAppAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForAppAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForUserAsync``1(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForUserAsync``1(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForUserAsync``2(System.String,``0,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.IDownstreamApi.PutForUserAsync``2(System.String,``0,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Text.Json.Serialization.Metadata.JsonTypeInfo{``1},System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptionsReadOnlyHttpMethod},System.Security.Claims.ClaimsPrincipal,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Identity.Abstractions.ITokenAcquirer" Id="T:Microsoft.Identity.Abstractions.ITokenAcquirer">
       <Member Id="M:Microsoft.Identity.Abstractions.ITokenAcquirer.GetTokenForAppAsync(System.String,Microsoft.Identity.Abstractions.AcquireTokenOptions,System.Threading.CancellationToken)" />
@@ -222,6 +293,26 @@
       <Member Id="P:Microsoft.Identity.Abstractions.MicrosoftIdentityApplicationOptions.SignUpSignInPolicyId" />
       <Member Id="P:Microsoft.Identity.Abstractions.MicrosoftIdentityApplicationOptions.WithSpaAuthCode" />
     </Type>
+    <Type Name="Microsoft.Identity.Abstractions.OperationError" Id="T:Microsoft.Identity.Abstractions.OperationError">
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationError.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Identity.Abstractions.OperationResult`2" Id="T:Microsoft.Identity.Abstractions.OperationResult`2">
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.#ctor" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.#ctor(`0)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.#ctor(`1)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.Equals(Microsoft.Identity.Abstractions.OperationResult{`0,`1})" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.GetHashCode" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.op_Equality(Microsoft.Identity.Abstractions.OperationResult{`0,`1},Microsoft.Identity.Abstractions.OperationResult{`0,`1})" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.op_Implicit(`0)~Microsoft.Identity.Abstractions.OperationResult{`0,`1}" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.op_Implicit(`1)~Microsoft.Identity.Abstractions.OperationResult{`0,`1}" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.op_Inequality(Microsoft.Identity.Abstractions.OperationResult{`0,`1},Microsoft.Identity.Abstractions.OperationResult{`0,`1})" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.ToOperationResult" />
+      <Member Id="M:Microsoft.Identity.Abstractions.OperationResult`2.ToString" />
+      <Member Id="P:Microsoft.Identity.Abstractions.OperationResult`2.Error" />
+      <Member Id="P:Microsoft.Identity.Abstractions.OperationResult`2.Result" />
+      <Member Id="P:Microsoft.Identity.Abstractions.OperationResult`2.Succeeded" />
+    </Type>
   </Namespace>
   <Namespace Name="Microsoft.Identity.Web">
     <Type Name="Microsoft.Identity.Web.AadIssuerValidatorOptions" Id="T:Microsoft.Identity.Web.AadIssuerValidatorOptions">
@@ -250,7 +341,7 @@
       <Member Id="F:Microsoft.Identity.Web.AppServicesAuthenticationDefaults.AuthenticationScheme" />
     </Type>
     <Type Name="Microsoft.Identity.Web.AppServicesAuthenticationHandler" Id="T:Microsoft.Identity.Web.AppServicesAuthenticationHandler">
-      <Member Id="M:Microsoft.Identity.Web.AppServicesAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.AppServicesAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)" />
+      <Member Id="M:Microsoft.Identity.Web.AppServicesAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.AppServicesAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder)" />
       <Member Id="M:Microsoft.Identity.Web.AppServicesAuthenticationHandler.HandleAuthenticateAsync" />
     </Type>
     <Type Name="Microsoft.Identity.Web.AppServicesAuthenticationInformation" Id="T:Microsoft.Identity.Web.AppServicesAuthenticationInformation">
@@ -293,8 +384,13 @@
       <Member Id="M:Microsoft.Identity.Web.BaseRequestExtensions.WithScopes``1(``0,System.String[])" />
       <Member Id="M:Microsoft.Identity.Web.BaseRequestExtensions.WithUser``1(``0,System.Security.Claims.ClaimsPrincipal)" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.BeforeOnBehalfOfInitialized" Id="T:Microsoft.Identity.Web.BeforeOnBehalfOfInitialized" />
+    <Type Name="Microsoft.Identity.Web.BeforeOnBehalfOfInitializedAsync" Id="T:Microsoft.Identity.Web.BeforeOnBehalfOfInitializedAsync" />
     <Type Name="Microsoft.Identity.Web.BeforeTokenAcquisitionForApp" Id="T:Microsoft.Identity.Web.BeforeTokenAcquisitionForApp" />
+    <Type Name="Microsoft.Identity.Web.BeforeTokenAcquisitionForOnBehalfOf" Id="T:Microsoft.Identity.Web.BeforeTokenAcquisitionForOnBehalfOf" />
+    <Type Name="Microsoft.Identity.Web.BeforeTokenAcquisitionForOnBehalfOfAsync" Id="T:Microsoft.Identity.Web.BeforeTokenAcquisitionForOnBehalfOfAsync" />
     <Type Name="Microsoft.Identity.Web.BeforeTokenAcquisitionForTestUser" Id="T:Microsoft.Identity.Web.BeforeTokenAcquisitionForTestUser" />
+    <Type Name="Microsoft.Identity.Web.BeforeTokenAcquisitionForTestUserAsync" Id="T:Microsoft.Identity.Web.BeforeTokenAcquisitionForTestUserAsync" />
     <Type Name="Microsoft.Identity.Web.CertificateDescription" Id="T:Microsoft.Identity.Web.CertificateDescription">
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.#ctor" />
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.#ctor(Microsoft.Identity.Abstractions.CredentialDescription)" />
@@ -304,6 +400,7 @@
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.FromKeyVault(System.String,System.String)" />
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.FromPath(System.String,System.String)" />
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.FromStoreWithDistinguishedName(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)" />
+      <Member Id="M:Microsoft.Identity.Web.CertificateDescription.FromStoreWithSubjectName(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)" />
       <Member Id="M:Microsoft.Identity.Web.CertificateDescription.FromStoreWithThumbprint(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)" />
       <Member Id="P:Microsoft.Identity.Web.CertificateDescription.Certificate" />
       <Member Id="P:Microsoft.Identity.Web.CertificateDescription.SourceType" />
@@ -320,6 +417,7 @@
       <Member Id="F:Microsoft.Identity.Web.CertificateSource.KeyVault" />
       <Member Id="F:Microsoft.Identity.Web.CertificateSource.Path" />
       <Member Id="F:Microsoft.Identity.Web.CertificateSource.StoreWithDistinguishedName" />
+      <Member Id="F:Microsoft.Identity.Web.CertificateSource.StoreWithSubjectName" />
       <Member Id="F:Microsoft.Identity.Web.CertificateSource.StoreWithThumbprint" />
     </Type>
     <Type Name="Microsoft.Identity.Web.ClaimConstants" Id="T:Microsoft.Identity.Web.ClaimConstants">
@@ -399,6 +497,8 @@
     <Type Name="Microsoft.Identity.Web.DefaultCertificateLoader" Id="T:Microsoft.Identity.Web.DefaultCertificateLoader">
       <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
+      <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
+      <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.LoadAllCertificates(System.Collections.Generic.IEnumerable{Microsoft.Identity.Web.CertificateDescription})" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCertificateLoader.LoadFirstCertificate(System.Collections.Generic.IEnumerable{Microsoft.Identity.Web.CertificateDescription})" />
@@ -412,12 +512,19 @@
     <Type Name="Microsoft.Identity.Web.DefaultCredentialsLoader" Id="T:Microsoft.Identity.Web.DefaultCredentialsLoader">
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.#ctor" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCredentialsLoader})" />
+      <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCredentialsLoader})" />
+      <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCredentialsLoader})" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCredentialsLoader})" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.LoadCredentialsIfNeededAsync(Microsoft.Identity.Abstractions.CredentialDescription,Microsoft.Identity.Abstractions.CredentialSourceLoaderParameters)" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.LoadFirstValidCredentialsAsync(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.CredentialDescription},Microsoft.Identity.Abstractions.CredentialSourceLoaderParameters)" />
       <Member Id="M:Microsoft.Identity.Web.DefaultCredentialsLoader.ResetCredentials(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.CredentialDescription})" />
       <Member Id="P:Microsoft.Identity.Web.DefaultCredentialsLoader.CredentialSourceLoaders" />
       <Member Id="P:Microsoft.Identity.Web.DefaultCredentialsLoader.CustomSignedAssertionCredentialSourceLoaders" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.DownstreamApiExtensions" Id="T:Microsoft.Identity.Web.DownstreamApiExtensions">
+      <Member Id="M:Microsoft.Identity.Web.DownstreamApiExtensions.AddDownstreamApi(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)" />
+      <Member Id="M:Microsoft.Identity.Web.DownstreamApiExtensions.AddDownstreamApi(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Microsoft.Identity.Abstractions.DownstreamApiOptions})" />
+      <Member Id="M:Microsoft.Identity.Web.DownstreamApiExtensions.AddDownstreamApis(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)" />
     </Type>
     <Type Name="Microsoft.Identity.Web.DownstreamRestApiExtensions" Id="T:Microsoft.Identity.Web.DownstreamRestApiExtensions">
       <Member Id="M:Microsoft.Identity.Web.DownstreamRestApiExtensions.AddDownstreamRestApi(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)" />
@@ -455,6 +562,12 @@
       <Member Id="M:Microsoft.Identity.Web.GraphServiceCollectionExtensions.AddMicrosoftGraph(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
       <Member Id="M:Microsoft.Identity.Web.GraphServiceCollectionExtensions.AddMicrosoftGraph(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Identity.Web.MicrosoftGraphOptions})" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.HttpRequestMessageAuthenticationExtensions" Id="T:Microsoft.Identity.Web.HttpRequestMessageAuthenticationExtensions">
+      <Member Id="M:Microsoft.Identity.Web.HttpRequestMessageAuthenticationExtensions.GetAuthenticationOptions(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:Microsoft.Identity.Web.HttpRequestMessageAuthenticationExtensions.WithAuthenticationOptions(System.Net.Http.HttpRequestMessage,Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions)" />
+      <Member Id="M:Microsoft.Identity.Web.HttpRequestMessageAuthenticationExtensions.WithAuthenticationOptions(System.Net.Http.HttpRequestMessage,System.Action{Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions})" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.IAuthenticationSchemeInformationProvider" Id="T:Microsoft.Identity.Web.IAuthenticationSchemeInformationProvider" />
     <Type Name="Microsoft.Identity.Web.IAuthRequiredScopeMetadata" Id="T:Microsoft.Identity.Web.IAuthRequiredScopeMetadata">
       <Member Id="P:Microsoft.Identity.Web.IAuthRequiredScopeMetadata.AcceptedScope" />
       <Member Id="P:Microsoft.Identity.Web.IAuthRequiredScopeMetadata.RequiredScopesConfigurationKey" />
@@ -543,6 +656,10 @@
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationBaseOptions.TokenAcquisitionOptions" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationBaseOptions.UserFlow" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.MicrosoftIdentityAuthenticationException" Id="T:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationException">
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationException.#ctor(System.String,System.Exception)" />
+    </Type>
     <Type Name="Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerHttpClientBuilderExtensions" Id="T:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerHttpClientBuilderExtensions">
       <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerHttpClientBuilderExtensions.AddMicrosoftIdentityAppAuthenticationHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.String,Microsoft.Extensions.Configuration.IConfiguration)" />
       <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerHttpClientBuilderExtensions.AddMicrosoftIdentityAppAuthenticationHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.String,System.Action{Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerOptions})" />
@@ -571,6 +688,20 @@
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityConsentAndConditionalAccessHandler.IsBlazorServer" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityConsentAndConditionalAccessHandler.User" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions" Id="T:Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions">
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions.AddMicrosoftIdentityMessageHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions.AddMicrosoftIdentityMessageHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.String)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions.AddMicrosoftIdentityMessageHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityHttpClientBuilderExtensions.AddMicrosoftIdentityMessageHandler(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.Action{Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions})" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.MicrosoftIdentityMessageHandler" Id="T:Microsoft.Identity.Web.MicrosoftIdentityMessageHandler">
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityMessageHandler.#ctor(Microsoft.Identity.Abstractions.IAuthorizationHeaderProvider,Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions,Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.MicrosoftIdentityMessageHandler})" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions" Id="T:Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions">
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions.#ctor" />
+      <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityMessageHandlerOptions.Scopes" />
+    </Type>
     <Type Name="Microsoft.Identity.Web.MicrosoftIdentityOptions" Id="T:Microsoft.Identity.Web.MicrosoftIdentityOptions">
       <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityOptions.#ctor" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityOptions.AllowWebApiToBeAuthorizedByACL" />
@@ -593,6 +724,12 @@
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityOptions.TokenDecryptionCredentials" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityOptions.UserAssignedManagedIdentityClientId" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityOptions.WithSpaAuthCode" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.MicrosoftIdentityTokenCredential" Id="T:Microsoft.Identity.Web.MicrosoftIdentityTokenCredential">
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityTokenCredential.#ctor(Microsoft.Identity.Abstractions.ITokenAcquirerFactory,Microsoft.Identity.Abstractions.IAuthenticationSchemeInformationProvider)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityTokenCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityTokenCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityTokenCredential.Options" />
     </Type>
     <Type Name="Microsoft.Identity.Web.MicrosoftIdentityUserAuthenticationMessageHandler" Id="T:Microsoft.Identity.Web.MicrosoftIdentityUserAuthenticationMessageHandler">
       <Member Id="M:Microsoft.Identity.Web.MicrosoftIdentityUserAuthenticationMessageHandler.#ctor(Microsoft.Identity.Web.ITokenAcquisition,Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.MicrosoftIdentityAuthenticationMessageHandlerOptions},Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.MicrosoftIdentityOptions},System.String)" />
@@ -634,6 +771,17 @@
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityWebChallengeUserException.Scopes" />
       <Member Id="P:Microsoft.Identity.Web.MicrosoftIdentityWebChallengeUserException.Userflow" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.MsalMtlsHttpClientFactory" Id="T:Microsoft.Identity.Web.MsalMtlsHttpClientFactory">
+      <Member Id="M:Microsoft.Identity.Web.MsalMtlsHttpClientFactory.#ctor(System.Net.Http.IHttpClientFactory)" />
+      <Member Id="M:Microsoft.Identity.Web.MsalMtlsHttpClientFactory.Dispose" />
+      <Member Id="M:Microsoft.Identity.Web.MsalMtlsHttpClientFactory.GetHttpClient" />
+      <Member Id="M:Microsoft.Identity.Web.MsalMtlsHttpClientFactory.GetHttpClient(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.OnBehalfOfEventArgs" Id="T:Microsoft.Identity.Web.OnBehalfOfEventArgs">
+      <Member Id="M:Microsoft.Identity.Web.OnBehalfOfEventArgs.#ctor" />
+      <Member Id="P:Microsoft.Identity.Web.OnBehalfOfEventArgs.User" />
+      <Member Id="P:Microsoft.Identity.Web.OnBehalfOfEventArgs.UserAssertionToken" />
+    </Type>
     <Type Name="Microsoft.Identity.Web.PolicyBuilderExtensions" Id="T:Microsoft.Identity.Web.PolicyBuilderExtensions">
       <Member Id="M:Microsoft.Identity.Web.PolicyBuilderExtensions.RequireScope(Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,System.Collections.Generic.IEnumerable{System.String})" />
       <Member Id="M:Microsoft.Identity.Web.PolicyBuilderExtensions.RequireScope(Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder,System.String[])" />
@@ -664,6 +812,9 @@
       <Member Id="P:Microsoft.Identity.Web.ScopeOrAppPermissionAuthorizationRequirement.RequiredScopesConfigurationKey" />
       <Member Id="P:Microsoft.Identity.Web.ScopeOrAppPermissionAuthorizationRequirement.ScopeAllowedValues" />
     </Type>
+    <Type Name="Microsoft.Identity.Web.ServiceCollectionExtensionForAzureCreds" Id="T:Microsoft.Identity.Web.ServiceCollectionExtensionForAzureCreds">
+      <Member Id="M:Microsoft.Identity.Web.ServiceCollectionExtensionForAzureCreds.AddMicrosoftIdentityAzureTokenCredential(Microsoft.Extensions.DependencyInjection.IServiceCollection)" />
+    </Type>
     <Type Name="Microsoft.Identity.Web.ServiceCollectionExtensions" Id="T:Microsoft.Identity.Web.ServiceCollectionExtensions">
       <Member Id="M:Microsoft.Identity.Web.ServiceCollectionExtensions.AddTokenAcquisition(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)" />
     </Type>
@@ -671,6 +822,10 @@
       <Member Id="M:Microsoft.Identity.Web.TokenAcquirerAppTokenCredential.#ctor(Microsoft.Identity.Abstractions.ITokenAcquirer)" />
       <Member Id="M:Microsoft.Identity.Web.TokenAcquirerAppTokenCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Identity.Web.TokenAcquirerAppTokenCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Identity.Web.TokenAcquirerExtensions" Id="T:Microsoft.Identity.Web.TokenAcquirerExtensions">
+      <Member Id="M:Microsoft.Identity.Web.TokenAcquirerExtensions.GetFicTokenAsync(Microsoft.Identity.Abstractions.ITokenAcquirer,Microsoft.Identity.Abstractions.AcquireTokenOptions,System.String,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Identity.Web.TokenAcquirerExtensions.WithClientAssertion(Microsoft.Identity.Abstractions.AcquireTokenOptions,System.String)" />
     </Type>
     <Type Name="Microsoft.Identity.Web.TokenAcquirerFactory" Id="T:Microsoft.Identity.Web.TokenAcquirerFactory">
       <Member Id="M:Microsoft.Identity.Web.TokenAcquirerFactory.#ctor" />
@@ -697,8 +852,13 @@
       <Member Id="M:Microsoft.Identity.Web.TokenAcquisitionAppTokenCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
     </Type>
     <Type Name="Microsoft.Identity.Web.TokenAcquisitionExtensionOptions" Id="T:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions">
+      <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeOnBehalfOfInitialized" />
+      <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeOnBehalfOfInitializedAsync" />
       <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeTokenAcquisitionForApp" />
+      <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeTokenAcquisitionForOnBehalfOf" />
+      <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeTokenAcquisitionForOnBehalfOfAsync" />
       <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeTokenAcquisitionForTestUser" />
+      <Member Id="E:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.OnBeforeTokenAcquisitionForTestUserAsync" />
       <Member Id="M:Microsoft.Identity.Web.TokenAcquisitionExtensionOptions.#ctor" />
     </Type>
     <Type Name="Microsoft.Identity.Web.TokenAcquisitionOptions" Id="T:Microsoft.Identity.Web.TokenAcquisitionOptions">
@@ -722,12 +882,14 @@
     <Type Name="Microsoft.Identity.Web.Experimental.CerticateObserverAction" Id="T:Microsoft.Identity.Web.Experimental.CerticateObserverAction">
       <Member Id="F:Microsoft.Identity.Web.Experimental.CerticateObserverAction.Deselected" />
       <Member Id="F:Microsoft.Identity.Web.Experimental.CerticateObserverAction.Selected" />
+      <Member Id="F:Microsoft.Identity.Web.Experimental.CerticateObserverAction.SuccessfullyUsed" />
     </Type>
     <Type Name="Microsoft.Identity.Web.Experimental.CertificateChangeEventArg" Id="T:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg">
       <Member Id="M:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg.#ctor" />
       <Member Id="P:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg.Action" />
       <Member Id="P:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg.Certificate" />
       <Member Id="P:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg.CredentialDescription" />
+      <Member Id="P:Microsoft.Identity.Web.Experimental.CertificateChangeEventArg.ThrownException" />
     </Type>
     <Type Name="Microsoft.Identity.Web.Experimental.ICertificatesObserver" Id="T:Microsoft.Identity.Web.Experimental.ICertificatesObserver">
       <Member Id="M:Microsoft.Identity.Web.Experimental.ICertificatesObserver.OnClientCertificateChanged(Microsoft.Identity.Web.Experimental.CertificateChangeEventArg)" />
@@ -885,7 +1047,7 @@
       <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.Challenge(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.EditProfile(System.String)" />
       <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.ResetPassword(System.String)" />
-      <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignIn(System.String,System.String)" />
+      <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignIn(System.String,System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignOut(System.String)" />
     </Type>
   </Namespace>

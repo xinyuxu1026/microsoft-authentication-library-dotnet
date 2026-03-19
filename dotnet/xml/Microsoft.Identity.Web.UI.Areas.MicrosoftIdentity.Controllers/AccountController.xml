@@ -6,56 +6,17 @@
   <TypeSignature Language="F#" Value="type AccountController = class&#xA;    inherit Controller" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-    <AssemblyVersion>2.6.1.0</AssemblyVersion>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
-    <AssemblyVersion>2.8.0.0</AssemblyVersion>
-    <AssemblyVersion>2.9.0.0</AssemblyVersion>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Mvc.Controller</BaseTypeName>
@@ -78,6 +39,10 @@
       <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.Route("[area]/[controller]/[action]")]</AttributeName>
       <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.Route("[area]/[controller]/[action]")&gt;]</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>
@@ -95,7 +60,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="microsoftIdentityOptionsMonitor" Type="Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.MicrosoftIdentityOptions&gt;" />
@@ -118,7 +83,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -169,7 +134,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -208,7 +173,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -239,15 +204,15 @@
       </Docs>
     </Member>
     <Member MemberName="SignIn">
-      <MemberSignature Language="C#" Value="public Microsoft.AspNetCore.Mvc.IActionResult SignIn (string scheme, string redirectUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.AspNetCore.Mvc.IActionResult SignIn(string scheme, string redirectUri) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignIn(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function SignIn (scheme As String, redirectUri As String) As IActionResult" />
-      <MemberSignature Language="F#" Value="override this.SignIn : string * string -&gt; Microsoft.AspNetCore.Mvc.IActionResult" Usage="accountController.SignIn (scheme, redirectUri)" />
+      <MemberSignature Language="C#" Value="public Microsoft.AspNetCore.Mvc.IActionResult SignIn (string scheme, string redirectUri, string? loginHint = default, string? domainHint = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.AspNetCore.Mvc.IActionResult SignIn(string scheme, string redirectUri, string loginHint, string domainHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.UI.Areas.MicrosoftIdentity.Controllers.AccountController.SignIn(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignIn (scheme As String, redirectUri As String, Optional loginHint As String = Nothing, Optional domainHint As String = Nothing) As IActionResult" />
+      <MemberSignature Language="F#" Value="override this.SignIn : string * string * string * string -&gt; Microsoft.AspNetCore.Mvc.IActionResult" Usage="accountController.SignIn (scheme, redirectUri, loginHint, domainHint)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -275,10 +240,36 @@
             </Attribute>
           </Attributes>
         </Parameter>
+        <Parameter Name="loginHint" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromQuery]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromQuery&gt;]</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="domainHint" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[Microsoft.AspNetCore.Mvc.FromQuery]</AttributeName>
+              <AttributeName Language="F#">[&lt;Microsoft.AspNetCore.Mvc.FromQuery&gt;]</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="scheme">Authentication scheme.</param>
         <param name="redirectUri">Redirect URI.</param>
+        <param name="loginHint">Login hint (user's email address).</param>
+        <param name="domainHint">Domain hint.</param>
         <summary>
             Handles user sign in.
             </summary>
@@ -295,7 +286,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.UI</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -1,6 +1,16 @@
 ---
 title: On-behalf-of flows with MSAL.NET
 description: "How to use MSAL.NET to authenticate on behalf of a user."
+author: cilwerner
+manager: 
+ms.author: cwerner
+ms.date: 05/22/2025
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: concept-article
+ms.custom: 
+#Customer intent:
 ---
 
 # On-behalf-of flows with MSAL.NET

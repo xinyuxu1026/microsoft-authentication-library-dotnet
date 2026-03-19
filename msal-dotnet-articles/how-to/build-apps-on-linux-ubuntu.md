@@ -1,5 +1,16 @@
 ---
 title: Building MSAL.NET applications on Linux
+description: Building MSAL.NET applications on Linux
+author: cilwerner
+manager: 
+ms.author: cwerner
+ms.date: 05/22/2025
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: how-to
+ms.custom: 
+#Customer intent: 
 ---
 
 # Building MSAL.NET applications on Linux

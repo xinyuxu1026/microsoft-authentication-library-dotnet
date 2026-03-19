@@ -1,18 +1,16 @@
 ---
 title: Logging errors and exceptions in MSAL.NET
 description: Learn how to log errors and exceptions in MSAL.NET
-services: active-directory
 author: Dickson-Mwendia
 manager: CelesteDG
-
+ms.author: dmwendia
+ms.date: 10/21/2022
 ms.service: msal
 ms.subservice: msal-dotnet
-ms.topic: conceptual
-ms.workload: identity
-ms.date: 10/21/2022
-ms.author: dmwendia
-ms.reviewer: saeeda, jmprieur
-ms.custom: aaddev, devx-track-dotnet
+ms.reviewer: 
+ms.topic: how-to
+ms.custom: aaddev, devx-track-dotnet, sfi-image-nochange
+#Customer intent: 
 ---
 
 # Logging in MSAL.NET

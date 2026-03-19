@@ -1,6 +1,16 @@
 ---
 title: Custom token cache for a public client applications
 description: "This article is about custom token cache implementations for public client applications."
+author: cilwerner
+manager: 
+ms.author: cwerner
+ms.date: 05/22/2025
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: how-to
+ms.custom: 
+#Customer intent: 
 ---
 
 # Custom token cache for a public client applications
@@ -69,7 +79,7 @@ static class TokenCacheHelper
  }
 ```
 
-A preview of a product quality token cache file based serializer for public client applications (for desktop applications running on Windows, Mac, and Linux) is available from the [Microsoft.Identity.Client.Extensions.Msal](https://github.com/AzureAD/microsoft-authentication-extensions-for-dotnet/tree/master/src/Microsoft.Identity.Client.Extensions.Msal) open source library. You can include it in your applications from the following NuGet package: [Microsoft.Identity.Client.Extensions.Msal](https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/).
+A preview of a product quality token cache file based serializer for public client applications (for desktop applications running on Windows, Mac, and Linux) is available from the [Microsoft.Identity.Client.Extensions.Msal](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/tree/main/src/client/Microsoft.Identity.Client.Extensions.Msal) open source library. You can include it in your applications from the following NuGet package: [Microsoft.Identity.Client.Extensions.Msal](https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/).
 
 > Disclaimer. The  Microsoft.Identity.Client.Extensions.Msal library is an extension over MSAL.NET. Classes in these libraries might make their way into MSAL.NET in the future, as is or with breaking changes.
 

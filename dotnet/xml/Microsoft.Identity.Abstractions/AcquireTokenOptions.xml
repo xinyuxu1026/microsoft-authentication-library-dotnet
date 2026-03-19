@@ -6,30 +6,23 @@
   <TypeSignature Language="F#" Value="type AcquireTokenOptions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>4.1.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.1.0.0</AssemblyVersion>
-    <AssemblyVersion>5.3.0.0</AssemblyVersion>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>7.2.0.0</AssemblyVersion>
-    <AssemblyVersion>7.2.1.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.1.1.0</AssemblyVersion>
-    <AssemblyVersion>8.2.0.0</AssemblyVersion>
-    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.2.0.0</AssemblyVersion>
+    <AssemblyVersion>9.3.0.0</AssemblyVersion>
+    <AssemblyVersion>9.5.0.0</AssemblyVersion>
+    <AssemblyVersion>9.6.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Options directing the token acquisition. These options are provided to the <see cref="T:Microsoft.Identity.Abstractions.ITokenAcquirer" /> methods, or
@@ -46,7 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -65,7 +58,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="other" Type="Microsoft.Identity.Abstractions.AcquireTokenOptions" />
@@ -86,7 +79,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -110,7 +103,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -135,7 +128,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Abstractions.AcquireTokenOptions</ReturnType>
@@ -158,7 +151,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
@@ -180,8 +173,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -200,12 +199,16 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,8 +233,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1, 1 })&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -253,7 +262,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -275,7 +284,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -301,7 +310,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -328,8 +337,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(1)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -351,7 +366,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Identity.Abstractions.ManagedIdentityOptions</ReturnType>
@@ -394,7 +409,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -416,7 +431,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -441,7 +456,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -466,7 +481,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Abstractions</AssemblyName>
-        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

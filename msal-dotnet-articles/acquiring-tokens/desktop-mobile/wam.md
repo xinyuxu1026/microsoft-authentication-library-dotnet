@@ -1,7 +1,15 @@
 ---
 title: Using MSAL.NET with Web Account Manager (WAM)
 description: "MSAL is able to call Web Account Manager (WAM), a Windows component that ships with the OS. This component acts as an authentication broker allowing the users of your app to benefit from integration with accounts known to Windows, such as the account you signed into your Windows session."
+author: cilwerner
+manager: 
+ms.author: cwerner
 ms.date: 06/29/2023
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: how-to
+#Customer intent: 
 ---
 
 # Using MSAL.NET with Web Account Manager (WAM)
@@ -24,6 +32,9 @@ An authentication broker is an application that runs on a user’s machine that 
 
 > [!IMPORTANT]
 > Use MSAL.NET 4.52.0 or higher to get broker support.
+
+> [!IMPORTANT]
+> WAM supports only Microsoft Entra ID and does not work with third-party identity providers (IDPs).
 
 WAM support is split across two packages:
 
@@ -175,6 +186,9 @@ To use the broker, developers will need to call <xref:Microsoft.Identity.Client.
 **†** `Microsoft.Identity.Client` versions 4.61.0 and above no longer include `net6.0-windows7.0` binary. Existing desktop applications targeting `net6.0-windows` should reference `Microsoft.Identity.Client.Broker` when using interactive authentication with Windows Broker and call <xref:Microsoft.Identity.Client.Broker.BrokerExtension.WithBroker(Microsoft.Identity.Client.PublicClientApplicationBuilder,Microsoft.Identity.Client.BrokerOptions)>; or reference `Microsoft.Identity.Client.Desktop` when [authenticating with browser](https://aka.ms/msal-net-uses-web-browser) and call <xref:Microsoft.Identity.Client.Desktop.DesktopExtensions.WithWindowsEmbeddedBrowserSupport(Microsoft.Identity.Client.PublicClientApplicationBuilder)>.
 
 ## Integration best practices
+
+> [!IMPORTANT]
+> When using WAM, your application MUST be running in the context of an active, interactive Windows user session and be able to display UI. Attempting to acquire tokens using WAM while running as a Windows service, using task scheduler (unless *specifically* running as a logged in user) or while using `runas` to impersonate another account will result in errors by design.
 
 To make sure that your customers have a great experience with WAM, we strongly advise you adhere to the following principles:
 

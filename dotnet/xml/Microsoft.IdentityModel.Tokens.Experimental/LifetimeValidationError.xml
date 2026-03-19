@@ -1,0 +1,175 @@
+<Type Name="LifetimeValidationError" FullName="Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError">
+  <TypeSignature Language="C#" Value="public class LifetimeValidationError : Microsoft.IdentityModel.Tokens.Experimental.ValidationError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LifetimeValidationError extends Microsoft.IdentityModel.Tokens.Experimental.ValidationError" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError" />
+  <TypeSignature Language="VB.NET" Value="Public Class LifetimeValidationError&#xA;Inherits ValidationError" />
+  <TypeSignature Language="F#" Value="type LifetimeValidationError = class&#xA;    inherit ValidationError" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+    <AssemblyVersion>8.13.0.0</AssemblyVersion>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <AssemblyVersion>8.15.0.0</AssemblyVersion>
+    <AssemblyVersion>8.16.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.IdentityModel.Tokens.Experimental.ValidationError</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents an error that occurs when a token's lifetime cannot be validated.
+            If available, the not before and expires values are stored in <see cref="P:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.NotBefore" /> and <see cref="P:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.Expires" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LifetimeValidationError (Microsoft.IdentityModel.Tokens.Experimental.MessageDetail messageDetail, Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType validationFailure, System.Diagnostics.StackFrame stackFrame, DateTime? notBefore, DateTime? expires);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Tokens.Experimental.MessageDetail messageDetail, class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType validationFailure, class System.Diagnostics.StackFrame stackFrame, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBefore, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expires) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.#ctor(Microsoft.IdentityModel.Tokens.Experimental.MessageDetail,Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType,System.Diagnostics.StackFrame,System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (messageDetail As MessageDetail, validationFailure As ValidationFailureType, stackFrame As StackFrame, notBefore As Nullable(Of DateTime), expires As Nullable(Of DateTime))" />
+      <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError : Microsoft.IdentityModel.Tokens.Experimental.MessageDetail * Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType * System.Diagnostics.StackFrame * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError" Usage="new Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError (messageDetail, validationFailure, stackFrame, notBefore, expires)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageDetail" Type="Microsoft.IdentityModel.Tokens.Experimental.MessageDetail" />
+        <Parameter Name="validationFailure" Type="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" />
+        <Parameter Name="notBefore" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="expires" Type="System.Nullable&lt;System.DateTime&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="messageDetail" />
+        <param name="validationFailure" />
+        <param name="stackFrame" />
+        <param name="notBefore" />
+        <param name="expires" />
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />
+        <see cref="T:System.DateTime" />
+        <see cref="T:Microsoft.IdentityModel.Tokens.SecurityToken" />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LifetimeValidationError (Microsoft.IdentityModel.Tokens.Experimental.MessageDetail messageDetail, Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType validationFailure, System.Diagnostics.StackFrame stackFrame, DateTime? notBefore, DateTime? expires, Exception? innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.IdentityModel.Tokens.Experimental.MessageDetail messageDetail, class Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType validationFailure, class System.Diagnostics.StackFrame stackFrame, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notBefore, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expires, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.#ctor(Microsoft.IdentityModel.Tokens.Experimental.MessageDetail,Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType,System.Diagnostics.StackFrame,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (messageDetail As MessageDetail, validationFailure As ValidationFailureType, stackFrame As StackFrame, notBefore As Nullable(Of DateTime), expires As Nullable(Of DateTime), innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError : Microsoft.IdentityModel.Tokens.Experimental.MessageDetail * Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType * System.Diagnostics.StackFrame * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Exception -&gt; Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError" Usage="new Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError (messageDetail, validationFailure, stackFrame, notBefore, expires, innerException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageDetail" Type="Microsoft.IdentityModel.Tokens.Experimental.MessageDetail" />
+        <Parameter Name="validationFailure" Type="Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" />
+        <Parameter Name="notBefore" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="expires" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="innerException" Type="System.Exception">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="messageDetail" />
+        <param name="validationFailure" />
+        <param name="stackFrame" />
+        <param name="notBefore" />
+        <param name="expires" />
+        <param name="innerException" />
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <see cref="T:Microsoft.IdentityModel.Tokens.Experimental.ValidationFailureType" />
+        <see cref="T:System.DateTime" />
+        <see cref="T:Microsoft.IdentityModel.Tokens.SecurityToken" />
+      </Docs>
+    </Member>
+    <Member MemberName="Expires">
+      <MemberSignature Language="C#" Value="public DateTime? Expires { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; Expires" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.Expires" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expires As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.Expires : Nullable&lt;DateTime&gt;" Usage="Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.Expires" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The date at which the token expires.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetException">
+      <MemberSignature Language="C#" Value="public override Exception GetException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Exception GetException() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.GetException" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetException () As Exception" />
+      <MemberSignature Language="F#" Value="override this.GetException : unit -&gt; Exception" Usage="lifetimeValidationError.GetException " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates an instance of an <see cref="T:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException" />.
+            </summary>
+        <returns>An instance of an Exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotBefore">
+      <MemberSignature Language="C#" Value="public DateTime? NotBefore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NotBefore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.NotBefore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotBefore As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.NotBefore : Nullable&lt;DateTime&gt;" Usage="Microsoft.IdentityModel.Tokens.Experimental.LifetimeValidationError.NotBefore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.IdentityModel.Tokens</AssemblyName>
+        <AssemblyVersion>8.16.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The date from which the token is valid.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

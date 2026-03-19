@@ -6,51 +6,17 @@
   <TypeSignature Language="F#" Value="type AppServicesAuthenticationHandler = class&#xA;    inherit AuthenticationHandler&lt;AppServicesAuthenticationOptions&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt;</BaseTypeName>
@@ -59,6 +25,12 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 0, 1 })&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             App service authentication handler.
@@ -67,31 +39,26 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AppServicesAuthenticationHandler (Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; options, Microsoft.Extensions.Logging.ILoggerFactory logger, System.Text.Encodings.Web.UrlEncoder encoder, Microsoft.AspNetCore.Authentication.ISystemClock clock);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Options.IOptionsMonitor`1&lt;class Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; options, class Microsoft.Extensions.Logging.ILoggerFactory logger, class System.Text.Encodings.Web.UrlEncoder encoder, class Microsoft.AspNetCore.Authentication.ISystemClock clock) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.AppServicesAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.AppServicesAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (options As IOptionsMonitor(Of AppServicesAuthenticationOptions), logger As ILoggerFactory, encoder As UrlEncoder, clock As ISystemClock)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Identity.Web.AppServicesAuthenticationHandler : Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; * Microsoft.Extensions.Logging.ILoggerFactory * System.Text.Encodings.Web.UrlEncoder * Microsoft.AspNetCore.Authentication.ISystemClock -&gt; Microsoft.Identity.Web.AppServicesAuthenticationHandler" Usage="new Microsoft.Identity.Web.AppServicesAuthenticationHandler (options, logger, encoder, clock)" />
+      <MemberSignature Language="C#" Value="public AppServicesAuthenticationHandler (Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; options, Microsoft.Extensions.Logging.ILoggerFactory logger, System.Text.Encodings.Web.UrlEncoder encoder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Extensions.Options.IOptionsMonitor`1&lt;class Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; options, class Microsoft.Extensions.Logging.ILoggerFactory logger, class System.Text.Encodings.Web.UrlEncoder encoder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.AppServicesAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.Identity.Web.AppServicesAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As IOptionsMonitor(Of AppServicesAuthenticationOptions), logger As ILoggerFactory, encoder As UrlEncoder)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Identity.Web.AppServicesAuthenticationHandler : Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt; * Microsoft.Extensions.Logging.ILoggerFactory * System.Text.Encodings.Web.UrlEncoder -&gt; Microsoft.Identity.Web.AppServicesAuthenticationHandler" Usage="new Microsoft.Identity.Web.AppServicesAuthenticationHandler (options, logger, encoder)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="options" Type="Microsoft.Extensions.Options.IOptionsMonitor&lt;Microsoft.Identity.Web.AppServicesAuthenticationOptions&gt;" />
         <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILoggerFactory" />
         <Parameter Name="encoder" Type="System.Text.Encodings.Web.UrlEncoder" />
-        <Parameter Name="clock" Type="Microsoft.AspNetCore.Authentication.ISystemClock" />
       </Parameters>
       <Docs>
-        <param name="options">App service authentication options.</param>
-        <param name="logger">Logger factory.</param>
-        <param name="encoder">URL encoder.</param>
-        <param name="clock">System clock.</param>
-        <summary>
-            Constructor for the AppServiceAuthenticationHandler.
-            Note the parameters are required by the base class.
-            </summary>
+        <param name="options">To be added.</param>
+        <param name="logger">To be added.</param>
+        <param name="encoder">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>Note the parameters are required by the base class.</remarks>
         <inheritdoc />
       </Docs>
@@ -105,7 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.AspNetCore.Authentication.AuthenticateResult&gt;</ReturnType>

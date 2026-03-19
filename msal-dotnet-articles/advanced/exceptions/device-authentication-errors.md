@@ -1,6 +1,16 @@
 ---
 title: Device authentication errors
 description: "Errors that can show up when using device authentication with MSAL.NET."
+author: Dickson-Mwendia
+manager: 
+ms.author: dmwendia
+ms.date: 05/20/2025
+ms.service: msal
+ms.subservice: msal-dotnet
+ms.reviewer: 
+ms.topic: troubleshooting-problem-resolution
+ms.custom: 
+#Customer intent: 
 ---
 
 # Device authentication errors

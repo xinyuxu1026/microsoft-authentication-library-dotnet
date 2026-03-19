@@ -6,56 +6,17 @@
   <TypeSignature Language="F#" Value="type DefaultCertificateLoader = class&#xA;    inherit DefaultCredentialsLoader&#xA;    interface ICertificateLoader" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-    <AssemblyVersion>2.6.1.0</AssemblyVersion>
-    <AssemblyVersion>2.7.0.0</AssemblyVersion>
-    <AssemblyVersion>2.8.0.0</AssemblyVersion>
-    <AssemblyVersion>2.9.0.0</AssemblyVersion>
-    <AssemblyVersion>2.10.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.0.0</AssemblyVersion>
-    <AssemblyVersion>2.11.1.0</AssemblyVersion>
-    <AssemblyVersion>2.12.4.0</AssemblyVersion>
-    <AssemblyVersion>2.13.0.0</AssemblyVersion>
-    <AssemblyVersion>2.13.1.0</AssemblyVersion>
-    <AssemblyVersion>2.13.2.0</AssemblyVersion>
-    <AssemblyVersion>2.13.3.0</AssemblyVersion>
-    <AssemblyVersion>2.13.4.0</AssemblyVersion>
-    <AssemblyVersion>2.14.0.0</AssemblyVersion>
-    <AssemblyVersion>2.15.1.0</AssemblyVersion>
-    <AssemblyVersion>2.15.2.0</AssemblyVersion>
-    <AssemblyVersion>2.15.3.0</AssemblyVersion>
-    <AssemblyVersion>2.15.5.0</AssemblyVersion>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
-    <AssemblyVersion>2.16.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.0.0</AssemblyVersion>
-    <AssemblyVersion>2.17.1.0</AssemblyVersion>
-    <AssemblyVersion>2.17.2.0</AssemblyVersion>
-    <AssemblyVersion>2.17.3.0</AssemblyVersion>
-    <AssemblyVersion>2.17.4.0</AssemblyVersion>
-    <AssemblyVersion>2.17.5.0</AssemblyVersion>
-    <AssemblyVersion>2.18.1.0</AssemblyVersion>
-    <AssemblyVersion>2.18.2.0</AssemblyVersion>
-    <AssemblyVersion>2.19.0.0</AssemblyVersion>
-    <AssemblyVersion>2.19.1.0</AssemblyVersion>
-    <AssemblyVersion>2.20.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.1.0</AssemblyVersion>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.0.0</AssemblyVersion>
-    <AssemblyVersion>3.2.1.0</AssemblyVersion>
-    <AssemblyVersion>3.2.2.0</AssemblyVersion>
-    <AssemblyVersion>3.3.0.0</AssemblyVersion>
-    <AssemblyVersion>3.3.1.0</AssemblyVersion>
-    <AssemblyVersion>3.4.0.0</AssemblyVersion>
-    <AssemblyVersion>3.5.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.0.0</AssemblyVersion>
-    <AssemblyVersion>3.6.1.0</AssemblyVersion>
-    <AssemblyVersion>3.6.2.0</AssemblyVersion>
-    <AssemblyVersion>3.7.0.0</AssemblyVersion>
-    <AssemblyVersion>3.7.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.0.0</AssemblyVersion>
-    <AssemblyVersion>3.8.1.0</AssemblyVersion>
-    <AssemblyVersion>3.8.2.0</AssemblyVersion>
-    <AssemblyVersion>3.8.3.0</AssemblyVersion>
+    <AssemblyVersion>3.11.0.0</AssemblyVersion>
+    <AssemblyVersion>3.12.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.0.0</AssemblyVersion>
+    <AssemblyVersion>3.14.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Identity.Web.DefaultCredentialsLoader</BaseTypeName>
@@ -65,6 +26,12 @@
       <InterfaceName>Microsoft.Identity.Web.ICertificateLoader</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
              Certificate Loader.
@@ -91,7 +58,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -110,15 +77,53 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="logger" />
         <summary>
             Constructor with a logger.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultCertificateLoader (System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; credentialSourceLoaders, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;? logger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; credentialSourceLoaders, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Identity.Web.DefaultCertificateLoader&gt; logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialSourceLoaders As IEnumerable(Of ICredentialSourceLoader), logger As ILogger(Of DefaultCertificateLoader))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Identity.Web.DefaultCertificateLoader : seq&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt; -&gt; Microsoft.Identity.Web.DefaultCertificateLoader" Usage="new Microsoft.Identity.Web.DefaultCertificateLoader (credentialSourceLoaders, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialSourceLoaders" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt;" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="credentialSourceLoaders">Additional credential source loaders. Can override built-in loaders.</param>
+        <param name="logger">Logger instance</param>
+        <summary>
+            Constructor with a logger and custom credential source loaders.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,17 +137,57 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="customSignedAssertionProviders" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider&gt;" />
-        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="customSignedAssertionProviders">List of providers of custom signed assertions</param>
         <param name="logger">ILogger.</param>
         <summary>
             Constructor with custom signed assertion providers.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultCertificateLoader (System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; credentialSourceLoaders, System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider&gt; customSignedAssertionProviders, Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;? logger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; credentialSourceLoaders, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider&gt; customSignedAssertionProviders, class Microsoft.Extensions.Logging.ILogger`1&lt;class Microsoft.Identity.Web.DefaultCertificateLoader&gt; logger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Identity.Web.DefaultCertificateLoader.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICredentialSourceLoader},System.Collections.Generic.IEnumerable{Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.DefaultCertificateLoader})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentialSourceLoaders As IEnumerable(Of ICredentialSourceLoader), customSignedAssertionProviders As IEnumerable(Of ICustomSignedAssertionProvider), logger As ILogger(Of DefaultCertificateLoader))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Identity.Web.DefaultCertificateLoader : seq&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt; * seq&lt;Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider&gt; * Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt; -&gt; Microsoft.Identity.Web.DefaultCertificateLoader" Usage="new Microsoft.Identity.Web.DefaultCertificateLoader (credentialSourceLoaders, customSignedAssertionProviders, logger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentialSourceLoaders" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICredentialSourceLoader&gt;" />
+        <Parameter Name="customSignedAssertionProviders" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.ICustomSignedAssertionProvider&gt;" />
+        <Parameter Name="logger" Type="Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Identity.Web.DefaultCertificateLoader&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="credentialSourceLoaders">Additional credential source loaders. Can override built-in loaders.</param>
+        <param name="customSignedAssertionProviders">List of providers of custom signed assertions</param>
+        <param name="logger">ILogger.</param>
+        <summary>
+            Constructor with both custom signed assertion providers and custom credential source loaders.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,10 +201,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Cryptography.X509Certificates.X509Certificate2&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="certificateDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Web.CertificateDescription&gt;" />
@@ -182,10 +233,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="certificateDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Web.CertificateDescription&gt;" />
@@ -208,10 +265,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Security.Cryptography.X509Certificates.X509Certificate2&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 1, 2 })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
       </ReturnValue>
       <Parameters>
         <Parameter Name="certificateDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Web.CertificateDescription&gt;" />
@@ -237,7 +300,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -262,7 +325,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -288,13 +351,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="credentialDescription" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.CredentialDescription&gt;" />
+        <Parameter Name="credentialDescription" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Abstractions.CredentialDescription&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="credentialDescription">Description of the certificates.</param>
@@ -314,13 +384,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="certificateDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Web.CertificateDescription&gt;" />
+        <Parameter Name="certificateDescriptions" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Identity.Web.CertificateDescription&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(new System.Byte[] { 2, 1 })&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="certificateDescriptions">Description of the certificates.</param>
@@ -340,8 +417,14 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Identity.Web.Certificate</AssemblyName>
-        <AssemblyVersion>3.8.3.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
